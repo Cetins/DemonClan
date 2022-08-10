@@ -18,4 +18,9 @@ public class FighterTest {
     public void hasHealthLevel() {
         assertEquals(200, gorgon.getHealthLevel());
     }
+
+    @Test
+    public void hasWeapon() {
+        assertEquals(Weapons.AXE, gorgon.getWeapon());
+    }
 }

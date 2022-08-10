@@ -10,4 +10,12 @@ public class Fighter extends Player{
         super(healthLevel);
         this.weapon = weapon;
     }
+
+    public Weapons getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(Weapons weapon) {
+        this.weapon = weapon;
+    }
 }

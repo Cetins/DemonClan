@@ -17,4 +17,12 @@ public enum Weapons implements ITool {
         this.damage = damage;
         this.speed = speed;
     }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
 }
