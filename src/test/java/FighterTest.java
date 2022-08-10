@@ -1,4 +1,6 @@
+import Quests.Players.Demons.Phalanx;
 import Quests.Players.Fighter;
+import Quests.Players.Helpers.Attacks;
 import Quests.Players.Helpers.Weapons;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,10 +10,12 @@ import static org.junit.Assert.assertEquals;
 public class FighterTest {
 
     Fighter gorgon;
+    Phalanx phalanx;
 
     @Before
     public void before() {
         gorgon = new Fighter(200, Weapons.AXE);
+        phalanx = new Phalanx(200, Attacks.POISON);
     }
 
     @Test
@@ -32,5 +36,17 @@ public class FighterTest {
     @Test
     public void weaponHasSpeed() {
         assertEquals(2, gorgon.getWeapon().getSpeed());
+    }
+
+    @Test
+    public void canDamageDemon() {
+        gorgon.damage(phalanx);
+        assertEquals(140, phalanx.getHealthLevel());
+    }
+
+    @Test
+    public void canTakeDamage() {
+        phalanx.damage(gorgon);
+        assertEquals(160, gorgon.getHealthLevel());
     }
 }

@@ -4,5 +4,5 @@ import Quests.Players.Player;
 
 public interface IDamage {
 
-    void damage(Player player, ITarget target);
+    void damage(ITarget target);
 }

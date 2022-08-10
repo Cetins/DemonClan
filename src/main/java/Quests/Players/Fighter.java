@@ -1,5 +1,6 @@
 package Quests.Players;
 
+import Quests.ITarget;
 import Quests.Players.Helpers.Weapons;
 
 public class Fighter extends Player{
@@ -17,5 +18,10 @@ public class Fighter extends Player{
 
     public void setWeapon(Weapons weapon) {
         this.weapon = weapon;
+    }
+
+    public void damage(ITarget target) {
+        int damagePoints = this.weapon.getDamage() * this.weapon.getSpeed();
+        target.takeDamage(damagePoints);
     }
 }

@@ -1,7 +1,6 @@
 package Quests.Players;
 
 import Quests.ITarget;
-import Quests.ITool;
 
 public class Player implements ITarget {
 
@@ -17,5 +16,9 @@ public class Player implements ITarget {
 
     public void setHealthLevel(int healthLevel) {
         this.healthLevel = healthLevel;
+    }
+
+    public void takeDamage(int damage) {
+        setHealthLevel(this.healthLevel - damage);
     }
 }
