@@ -23,4 +23,14 @@ public class FighterTest {
     public void hasWeapon() {
         assertEquals(Weapons.AXE, gorgon.getWeapon());
     }
+
+    @Test
+    public void weaponHasDamage() {
+        assertEquals(30, gorgon.getWeapon().getDamage());
+    }
+
+    @Test
+    public void weaponHasSpeed() {
+        assertEquals(2, gorgon.getWeapon().getSpeed());
+    }
 }
