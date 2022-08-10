@@ -1,4 +1,4 @@
-package Players;
+package Quests.Players;
 
 public class Player {
 }
