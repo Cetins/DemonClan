@@ -1,8 +1,8 @@
-package Quests.Players;
+package Quests.Players.Helpers;
 
 import Quests.IHeal;
 
-public enum Potions implements IHeal {
+public enum Potions {
 
     CRESCENT_MOON_GRASS(10),
     HALF_MOON_GRASS(20),

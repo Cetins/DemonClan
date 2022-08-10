@@ -1,4 +1,4 @@
-package Quests.Players;
+package Quests.Players.Helpers;
 
 public enum MythicalCreatures {
 

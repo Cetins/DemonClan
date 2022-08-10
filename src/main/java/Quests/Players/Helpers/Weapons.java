@@ -1,8 +1,9 @@
-package Quests.Players;
+package Quests.Players.Helpers;
 
-import Quests.IDamage;
+import Quests.ITool;
 
-public enum Weapons implements IDamage {
+public enum Weapons implements ITool {
+
     SPEAR(40,1),
     AXE(30, 2),
     SWORD(20, 3),

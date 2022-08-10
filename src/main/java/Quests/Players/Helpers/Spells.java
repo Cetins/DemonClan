@@ -1,8 +1,8 @@
-package Quests.Players;
+package Quests.Players.Helpers;
 
 import Quests.IDamage;
 
-public enum Spells implements IDamage {
+public enum Spells {
     FIREBALL(40, 1),
     SOUL_FIRE(30,2),
     ACID_CLOUD(30,2),
