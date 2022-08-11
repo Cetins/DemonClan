@@ -1,7 +1,10 @@
+import Quests.Dwarf;
+import Quests.Players.Barbarian;
 import Quests.Players.Demons.Phalanx;
 import Quests.Players.Fighter;
 import Quests.Players.Helpers.Attacks;
 import Quests.Players.Helpers.Weapons;
+import Quests.Players.Knight;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,11 +14,17 @@ public class FighterTest {
 
     Fighter gorgon;
     Phalanx phalanx;
+    Dwarf dwarf;
+    Barbarian barbarian;
+    Knight knight;
 
     @Before
     public void before() {
         gorgon = new Fighter(200, Weapons.AXE);
         phalanx = new Phalanx(200, Attacks.POISON);
+        dwarf = new Dwarf(200, Weapons.AXE);
+        barbarian = new Barbarian(200, Weapons.SPEAR);
+        knight = new Knight(200, Weapons.SWORD);
     }
 
     @Test
@@ -48,5 +57,30 @@ public class FighterTest {
     public void canTakeDamage() {
         phalanx.damage(gorgon);
         assertEquals(160, gorgon.getHealthLevel());
+    }
+
+    @Test
+    public void dwarfCanDoubleSpeedAttack() {
+        dwarf.doubleSpeedAttack(phalanx);
+        assertEquals(80, phalanx.getHealthLevel());
+    }
+
+    @Test
+    public void barbarianCanHeavyAttack() {
+        barbarian.heavyAttack(phalanx);
+        assertEquals(80, phalanx.getHealthLevel());
+    }
+
+    @Test
+    public void knightTakesNormalDamageWithoutArmor() {
+        phalanx.damage(knight);
+        assertEquals(160, knight.getHealthLevel());
+    }
+
+    @Test
+    public void knightCanPutArmor() {
+        knight.putArmor();
+        phalanx.damage(knight);
+        assertEquals(132, knight.getHealthLevel());
     }
 }

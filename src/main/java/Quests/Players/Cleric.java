@@ -3,11 +3,11 @@ package Quests.Players;
 import Quests.ITarget;
 import Quests.Players.Helpers.Spells;
 
-public class Speller extends Player{
+public class Cleric extends Player{
 
     private Spells spell;
 
-    public Speller(int healthLevel, Spells spell) {
+    public Cleric(int healthLevel, Spells spell) {
         super(healthLevel);
         this.spell = spell;
     }

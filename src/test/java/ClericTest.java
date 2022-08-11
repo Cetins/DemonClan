@@ -1,20 +1,20 @@
 import Quests.Players.Demons.FlameLurker;
 import Quests.Players.Helpers.Attacks;
 import Quests.Players.Helpers.Spells;
-import Quests.Players.Speller;
+import Quests.Players.Cleric;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class SpellerTest {
+public class ClericTest {
 
-    Speller merlin;
+    Cleric merlin;
     FlameLurker flameLurker;
 
     @Before
     public void before() {
-        merlin = new Speller(200, Spells.POISON_CLOUD);
+        merlin = new Cleric(200, Spells.POISON_CLOUD);
         flameLurker = new FlameLurker(200, Attacks.FIRE);
     }
 

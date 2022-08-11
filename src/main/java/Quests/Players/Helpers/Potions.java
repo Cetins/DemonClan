@@ -14,4 +14,8 @@ public enum Potions {
     Potions(int heal) {
         this.heal = heal;
     }
+
+    public int getHeal() {
+        return heal;
+    }
 }

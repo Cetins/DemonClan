@@ -1,8 +1,6 @@
 package Quests.Players.Helpers;
 
-import Quests.ITool;
-
-public enum Weapons implements ITool {
+public enum Weapons {
 
     SPEAR(40,1),
     AXE(30, 2),

@@ -6,6 +6,10 @@ public class Player implements ITarget {
 
     private int healthLevel;
 
+    public void addHealth(int points) {
+        this.setHealthLevel(this.getHealthLevel() + points);
+    }
+
     public Player(int healthLevel) {
         this.healthLevel = healthLevel;
     }
