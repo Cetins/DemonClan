@@ -1,7 +1,7 @@
-import Quests.Players.Demons.FlameLurker;
-import Quests.Players.Helpers.Attacks;
-import Quests.Players.Helpers.Spells;
-import Quests.Players.Cleric;
+import Quests.Demons.FlameLurker;
+import Quests.Helpers.AttackMethods;
+import Quests.Helpers.Spells;
+import Quests.Players.Healers.Cleric;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,7 +15,7 @@ public class ClericTest {
     @Before
     public void before() {
         merlin = new Cleric(200, Spells.POISON_CLOUD);
-        flameLurker = new FlameLurker(200, Attacks.FIRE);
+        flameLurker = new FlameLurker(200, AttackMethods.FIRE);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class ClericTest {
 
     @Test
     public void canTakeDamage() {
-        flameLurker.damage(merlin);
+        flameLurker.giveDamage(merlin);
         assertEquals(140, merlin.getHealthLevel());
     }
 }

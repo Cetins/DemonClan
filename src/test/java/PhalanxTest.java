@@ -1,5 +1,5 @@
-import Quests.Players.Demons.Phalanx;
-import Quests.Players.Helpers.Attacks;
+import Quests.Demons.Phalanx;
+import Quests.Helpers.AttackMethods;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ public class PhalanxTest {
 
     @Before
     public void before() {
-        phalanx = new Phalanx(300, Attacks.POISON);
+        phalanx = new Phalanx(300, AttackMethods.POISON);
     }
 
     @Test
@@ -21,16 +21,16 @@ public class PhalanxTest {
 
     @Test
     public void hasAttackMethod() {
-        assertEquals(Attacks.POISON, phalanx.getAttack());
+        assertEquals(AttackMethods.POISON, phalanx.getAttackMethods());
     }
 
     @Test
     public void hasAttackDamage() {
-        assertEquals(40, phalanx.getAttack().getDamage());
+        assertEquals(40, phalanx.getAttackMethods().getDamage());
     }
 
     @Test
     public void hasAttackSpeed() {
-        assertEquals(1, phalanx.getAttack().getSpeed());
+        assertEquals(1, phalanx.getAttackMethods().getSpeed());
     }
 }

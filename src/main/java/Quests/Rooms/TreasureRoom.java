@@ -1,7 +1,7 @@
 package Quests.Rooms;
 
-import Quests.Players.Helpers.Herbs;
-import Quests.Players.Helpers.Treasures;
+import Quests.Helpers.Herbs;
+import Quests.Helpers.Treasures;
 
 import java.util.ArrayList;
 

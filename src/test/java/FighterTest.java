@@ -1,10 +1,10 @@
-import Quests.Dwarf;
-import Quests.Players.Barbarian;
-import Quests.Players.Demons.Phalanx;
-import Quests.Players.Fighter;
-import Quests.Players.Helpers.Attacks;
-import Quests.Players.Helpers.Weapons;
-import Quests.Players.Knight;
+import Quests.Players.Fighters.Dwarf;
+import Quests.Players.Fighters.Barbarian;
+import Quests.Demons.Phalanx;
+import Quests.Players.Fighters.Fighter;
+import Quests.Helpers.AttackMethods;
+import Quests.Helpers.Weapons;
+import Quests.Players.Fighters.Knight;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -21,7 +21,7 @@ public class FighterTest {
     @Before
     public void before() {
         gorgon = new Fighter(200, Weapons.AXE);
-        phalanx = new Phalanx(200, Attacks.POISON);
+        phalanx = new Phalanx(200, AttackMethods.POISON);
         dwarf = new Dwarf(200, Weapons.AXE);
         barbarian = new Barbarian(200, Weapons.SPEAR);
         knight = new Knight(200, Weapons.SWORD);
@@ -30,6 +30,11 @@ public class FighterTest {
     @Test
     public void hasHealthLevel() {
         assertEquals(200, gorgon.getHealthLevel());
+    }
+
+    @Test
+    public void startsWithZeroCoins() {
+        assertEquals(0, gorgon.getCoins());
     }
 
     @Test
@@ -49,13 +54,13 @@ public class FighterTest {
 
     @Test
     public void canDamageDemon() {
-        gorgon.damage(phalanx);
+        gorgon.giveDamage(phalanx);
         assertEquals(140, phalanx.getHealthLevel());
     }
 
     @Test
     public void canTakeDamage() {
-        phalanx.damage(gorgon);
+        phalanx.giveDamage(gorgon);
         assertEquals(160, gorgon.getHealthLevel());
     }
 
@@ -73,14 +78,14 @@ public class FighterTest {
 
     @Test
     public void knightTakesNormalDamageWithoutArmor() {
-        phalanx.damage(knight);
+        phalanx.giveDamage(knight);
         assertEquals(160, knight.getHealthLevel());
     }
 
     @Test
     public void knightCanPutArmor() {
         knight.putArmor();
-        phalanx.damage(knight);
+        phalanx.giveDamage(knight);
         assertEquals(132, knight.getHealthLevel());
     }
 }

@@ -1,9 +1,9 @@
-import Quests.Players.Demons.FlameLurker;
-import Quests.Players.Healer;
-import Quests.Players.Helpers.Attacks;
-import Quests.Players.Helpers.Potions;
-import Quests.Players.Helpers.Spells;
-import Quests.Players.Cleric;
+import Quests.Demons.FlameLurker;
+import Quests.Players.Healers.Healer;
+import Quests.Helpers.AttackMethods;
+import Quests.Helpers.Potions;
+import Quests.Helpers.Spells;
+import Quests.Players.Healers.Cleric;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -19,7 +19,7 @@ public class HealerTest {
     public void before() {
         mary = new Healer(200, Potions.ROYAL_LOTUS);
         merlin = new Cleric(200, Spells.POISON_CLOUD);
-        flameLurker = new FlameLurker(200, Attacks.FIRE);
+        flameLurker = new FlameLurker(200, AttackMethods.FIRE);
     }
 
     @Test
@@ -39,7 +39,7 @@ public class HealerTest {
 
     @Test
     public void canTakeDamage() {
-        flameLurker.damage(mary);
+        flameLurker.giveDamage(mary);
         assertEquals(140, mary.getHealthLevel());
     }
 }
