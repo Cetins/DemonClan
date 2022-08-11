@@ -1,8 +1,16 @@
 package Quests.Players;
 
+import Quests.Helpers.CoinBundles;
+import Quests.Helpers.Herbs;
+import Quests.Helpers.Treasures;
+import Quests.ICollect;
 import Quests.ITarget;
+import Quests.Rooms.Room;
+import Quests.Rooms.TreasureRoom;
 
-public abstract class Player implements ITarget {
+import java.util.ArrayList;
+
+public abstract class Player implements ITarget, ICollect {
 
     private int healthLevel;
     private int coins;
@@ -36,5 +44,35 @@ public abstract class Player implements ITarget {
 
     public void takeDamage(int damage) {
         setHealthLevel(this.healthLevel - damage);
+    }
+
+    public void collectHerb(Room room) {
+        ArrayList<Herbs> herbs = room.getHerbs();
+        int healthPoints = 0;
+        for (Herbs herb:
+             herbs) {
+            healthPoints += herb.getPoints();
+        }
+        this.addHealth(healthPoints);
+    }
+
+    public void collectCoins(Room room) {
+        ArrayList<CoinBundles> coinBundles = room.getCoinBundles();
+        int coins = 0;
+        for (CoinBundles coinBundle:
+             coinBundles) {
+            coins += coinBundle.getCoins();
+        }
+        this.addCoins(coins);
+    }
+
+    public void collectTreasure(TreasureRoom treasureRoom) {
+        ArrayList<Treasures> treasures = treasureRoom.getTreasures();
+        int treasurePoints = 0;
+        for (Treasures treasure:
+             treasures) {
+            treasurePoints += treasure.getPoints();
+        }
+        this.addCoins(treasurePoints);
     }
 }

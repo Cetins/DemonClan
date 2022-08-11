@@ -1,17 +1,17 @@
 package Quests.Rooms;
 
+import Quests.Helpers.CoinBundles;
 import Quests.Helpers.Herbs;
 import Quests.Helpers.Treasures;
 
 import java.util.ArrayList;
 
-public class TreasureRoom {
+public class TreasureRoom extends Room {
 
-    ArrayList<Herbs> herbs;
     ArrayList<Treasures> treasures;
 
-    public TreasureRoom(ArrayList<Herbs> herbs, ArrayList<Treasures> treasures) {
-        this.herbs = herbs;
+    public TreasureRoom(ArrayList<Herbs> herbs, ArrayList<CoinBundles> coinBundles, ArrayList<Treasures> treasures) {
+        super(herbs, coinBundles);
         this.treasures = treasures;
     }
 

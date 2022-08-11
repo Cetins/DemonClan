@@ -1,17 +1,18 @@
 package Quests.Rooms;
 
 import Quests.Demons.Demon;
+import Quests.Helpers.CoinBundles;
 import Quests.Helpers.Herbs;
 import Quests.Helpers.Treasures;
 
 import java.util.ArrayList;
 
-public class DemonRoom extends TreasureRoom{
+public class DemonRoom extends Room{
 
     ArrayList<Demon> demons;
 
-    public DemonRoom(ArrayList<Herbs> herbs, ArrayList<Treasures> treasures, ArrayList<Demon> demons) {
-        super(herbs, treasures);
+    public DemonRoom(ArrayList<Herbs> herbs, ArrayList<CoinBundles> coinBundles, ArrayList<Demon> demons) {
+        super(herbs, coinBundles);
         this.demons = demons;
     }
 
