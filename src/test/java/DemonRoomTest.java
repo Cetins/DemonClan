@@ -3,7 +3,6 @@ import Quests.Demons.Phalanx;
 import Quests.Helpers.*;
 import Quests.Players.Fighters.Knight;
 import Quests.Rooms.DemonRoom;
-import Quests.Rooms.TreasureRoom;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -42,6 +41,11 @@ public class DemonRoomTest {
     }
 
     @Test
+    public void hasAtLeast1Demon() {
+        assertEquals(1, demonRoom.getDemons().size());
+    }
+
+    @Test
     public void playerCanCollectHerbs() {
         phalanx.giveDamage(knight); // knight healthLevel should go 160
         knight.collectHerb(demonRoom); // room has herbs in total value of 70
@@ -53,5 +57,4 @@ public class DemonRoomTest {
         knight.collectCoins(demonRoom);
         assertEquals(70, knight.getCoins());
     }
-
 }
