@@ -1,7 +1,7 @@
 package DemonClan.Players.Spellers;
 
 import DemonClan.Helpers.Spells;
-import DemonClan.ITarget;
+import DemonClan.Interfaces.ITarget;
 import DemonClan.Players.Player;
 
 public class Speller extends Player {

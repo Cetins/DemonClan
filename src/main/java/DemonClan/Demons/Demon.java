@@ -1,7 +1,7 @@
 package DemonClan.Demons;
 
-import DemonClan.IAttack;
-import DemonClan.ITarget;
+import DemonClan.Interfaces.IAttack;
+import DemonClan.Interfaces.ITarget;
 import DemonClan.Helpers.AttackMethods;
 
 public abstract class Demon implements ITarget,IAttack {

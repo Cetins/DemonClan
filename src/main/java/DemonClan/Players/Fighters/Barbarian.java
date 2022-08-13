@@ -1,6 +1,6 @@
 package DemonClan.Players.Fighters;
 
-import DemonClan.ITarget;
+import DemonClan.Interfaces.ITarget;
 import DemonClan.Helpers.Weapons;
 
 public class Barbarian extends Fighter {

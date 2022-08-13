@@ -3,8 +3,8 @@ package DemonClan.Players;
 import DemonClan.Helpers.CoinBundles;
 import DemonClan.Helpers.Herbs;
 import DemonClan.Helpers.Treasures;
-import DemonClan.ICollect;
-import DemonClan.ITarget;
+import DemonClan.Interfaces.ICollect;
+import DemonClan.Interfaces.ITarget;
 import DemonClan.Rooms.Room;
 import DemonClan.Rooms.TreasureRoom;
 

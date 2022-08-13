@@ -1,6 +1,6 @@
 package DemonClan.Players.Healers;
 
-import DemonClan.IHeal;
+import DemonClan.Interfaces.IHeal;
 import DemonClan.Helpers.Potions;
 import DemonClan.Players.Player;
 
