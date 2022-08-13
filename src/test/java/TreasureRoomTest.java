@@ -62,4 +62,11 @@ public class TreasureRoomTest {
         knight.collectTreasure(treasureRoom);
         assertEquals(300, knight.getCoins());
     }
+    @Test
+    public void canCollectTotalHP() {
+        int totalPoints = herbs.stream()
+                .mapToInt(Herbs::getPoints)
+                .sum();
+        assertEquals(70, totalPoints);
+    }
 }
