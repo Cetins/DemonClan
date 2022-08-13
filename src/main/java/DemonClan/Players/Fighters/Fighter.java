@@ -8,8 +8,8 @@ public class Fighter extends Player {
 
     private Weapons weapon;
 
-    public Fighter(int healthLevel, Weapons weapon) {
-        super(healthLevel);
+    public Fighter(String name, int healthLevel, Weapons weapon) {
+        super(name, healthLevel);
         this.weapon = weapon;
     }
 

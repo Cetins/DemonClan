@@ -17,8 +17,8 @@ public class HealerTest {
 
     @Before
     public void before() {
-        mary = new Healer(200, Potions.ROYAL_LOTUS);
-        merlin = new Cleric(200, Spells.POISON_CLOUD);
+        mary = new Healer("Healer", 200, Potions.ROYAL_LOTUS);
+        merlin = new Cleric("Cleric", 200, Spells.POISON_CLOUD);
         flameLurker = new FlameLurker(200, AttackMethods.FIRE);
     }
 

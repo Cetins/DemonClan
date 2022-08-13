@@ -8,8 +8,8 @@ public class Healer extends Player implements IHeal {
 
     private Potions potion;
 
-    public Healer(int healthLevel, Potions potion) {
-        super(healthLevel);
+    public Healer(String name, int healthLevel, Potions potion) {
+        super(name, healthLevel);
         this.potion = potion;
     }
 

@@ -16,9 +16,9 @@ public class SpellerTest {
 
     @Before
     public void before() {
-        warlock = new Warlock(200, Spells.POISON_CLOUD);
+        warlock = new Warlock("Warlock", 200, Spells.POISON_CLOUD);
         flameLurker = new FlameLurker(200, AttackMethods.FIRE);
-        wizard = new Wizard(200, Spells.ACID_CLOUD);
+        wizard = new Wizard("Wizard", 200, Spells.ACID_CLOUD);
     }
 
     @Test

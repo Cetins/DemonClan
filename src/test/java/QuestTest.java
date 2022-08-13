@@ -29,8 +29,8 @@ public class QuestTest {
 
     @Before
     public void before() {
-        knight = new Knight(200, Weapons.SWORD);
-        warlock = new Warlock(200, Spells.POISON_CLOUD);
+        knight = new Knight("Knight", 200, Weapons.SWORD);
+        warlock = new Warlock("Warlock", 200, Spells.POISON_CLOUD);
         flameLurker = new FlameLurker(300, AttackMethods.FIRE);
         herbs = new ArrayList<>(Arrays.asList(Herbs.OLD_SPICE, Herbs.PURPLE_LOTUS)); // 70hp
         coinBundles = new ArrayList<>(Arrays.asList(CoinBundles.SMALL, CoinBundles.SMALL, CoinBundles.LARGE));  // 70pt

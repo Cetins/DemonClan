@@ -14,7 +14,7 @@ public class ClericTest {
 
     @Before
     public void before() {
-        merlin = new Cleric(200, Spells.POISON_CLOUD);
+        merlin = new Cleric("Cleric", 200, Spells.POISON_CLOUD);
         flameLurker = new FlameLurker(200, AttackMethods.FIRE);
     }
 

@@ -20,11 +20,11 @@ public class FighterTest {
 
     @Before
     public void before() {
-        gorgon = new Fighter(200, Weapons.AXE);
+        gorgon = new Fighter("Fighter", 200, Weapons.AXE);
         phalanx = new Phalanx(200, AttackMethods.POISON);
-        dwarf = new Dwarf(200, Weapons.AXE);
-        barbarian = new Barbarian(200, Weapons.SPEAR);
-        knight = new Knight(200, Weapons.SWORD);
+        dwarf = new Dwarf("Dwarf", 200, Weapons.AXE);
+        barbarian = new Barbarian("Barbarian", 200, Weapons.SPEAR);
+        knight = new Knight("Knight",200, Weapons.SWORD);
     }
 
     @Test

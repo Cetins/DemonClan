@@ -6,9 +6,9 @@ public class Knight extends Fighter {
 
     private boolean armor;
 
-    public Knight(int healthLevel, Weapons weapon) {
-        super(healthLevel, weapon);
-        this.armor = false;
+    public Knight(String name, int healthLevel, Weapons weapon) {
+        super(name, healthLevel, weapon);
+        this.armor = armor;
     }
 
     public boolean isArmor() {

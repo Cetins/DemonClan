@@ -12,12 +12,20 @@ import java.util.ArrayList;
 
 public abstract class Player implements ITarget, ICollect {
 
+    private String name;
     private int healthLevel;
     private int coins;
+    private boolean alive;
 
-    public Player(int healthLevel) {
+    public Player(String name, int healthLevel) {
+        this.name = name;
         this.healthLevel = healthLevel;
         this.coins = 0;
+        this.alive = true;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getHealthLevel() {
@@ -44,6 +52,14 @@ public abstract class Player implements ITarget, ICollect {
 
     public void takeDamage(int damage) {
         setHealthLevel(this.healthLevel - damage);
+    }
+
+    public boolean isAlive() {
+        return alive;
+    }
+
+    public void setAlive(boolean alive) {
+        this.alive = alive;
     }
 
     public void collectHerb(Room room) {

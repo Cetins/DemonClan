@@ -5,8 +5,8 @@ import DemonClan.Interfaces.ITarget;
 
 public class Wizard extends Speller{
 
-    public Wizard(int healthLevel, Spells spell) {
-        super(healthLevel, spell);
+    public Wizard(String name, int healthLevel, Spells spell) {
+        super(name, healthLevel, spell);
     }
 
     public void magicArrowSpell(ITarget target) {

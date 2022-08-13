@@ -8,8 +8,8 @@ public class Cleric extends Player {
 
     private Spells spell;
 
-    public Cleric(int healthLevel, Spells spell) {
-        super(healthLevel);
+    public Cleric(String name, int healthLevel, Spells spell) {
+        super(name, healthLevel);
         this.spell = spell;
     }
 

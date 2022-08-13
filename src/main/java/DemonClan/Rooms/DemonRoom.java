@@ -36,6 +36,10 @@ public class DemonRoom extends Room{
         for (Player player:
                 players) {
             player.takeDamage((int)damagePerPlayer);
+            if (player.getHealthLevel() < 0) {
+                player.setAlive(false);
+                System.out.println(player.getName() + " is dead");
+            }
         }
     }
 }

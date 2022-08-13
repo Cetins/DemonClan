@@ -5,8 +5,8 @@ import DemonClan.Helpers.Weapons;
 
 public class Barbarian extends Fighter {
 
-    public Barbarian(int healthLevel, Weapons weapon) {
-        super(healthLevel, weapon);
+    public Barbarian(String name, int healthLevel, Weapons weapon) {
+        super(name, healthLevel, weapon);
     }
 
     public void heavyAttack(ITarget target) {

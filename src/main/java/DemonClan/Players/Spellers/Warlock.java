@@ -5,8 +5,8 @@ import DemonClan.Interfaces.ITarget;
 
 public class Warlock  extends Speller {
 
-    public Warlock(int healthLevel, Spells spell) {
-        super(healthLevel, spell);
+    public Warlock(String name, int healthLevel, Spells spell) {
+        super(name, healthLevel, spell);
     }
 
     public void spellStorm(ITarget target) {

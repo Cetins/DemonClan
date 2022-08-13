@@ -8,8 +8,8 @@ public class Speller extends Player {
 
     private Spells spell;
 
-    public Speller(int healthLevel, Spells spell) {
-        super(healthLevel);
+    public Speller(String name, int healthLevel, Spells spell) {
+        super(name, healthLevel);
         this.spell = spell;
     }
 

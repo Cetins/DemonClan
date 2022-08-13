@@ -22,7 +22,7 @@ public class DemonRoomTest {
 
     @Before
     public void before() {
-        knight = new Knight(200, Weapons.SWORD);
+        knight = new Knight("Knight", 200, Weapons.SWORD);
         phalanx = new Phalanx(300, AttackMethods.POISON);
         herbs = new ArrayList<>(Arrays.asList(Herbs.OLD_SPICE, Herbs.PURPLE_LOTUS));
         coinBundles = new ArrayList<>(Arrays.asList(CoinBundles.SMALL, CoinBundles.SMALL, CoinBundles.LARGE));
