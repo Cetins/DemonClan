@@ -1,9 +1,9 @@
-import Quests.Demons.FlameLurker;
-import Quests.Players.Healers.Healer;
-import Quests.Helpers.AttackMethods;
-import Quests.Helpers.Potions;
-import Quests.Helpers.Spells;
-import Quests.Players.Healers.Cleric;
+import DemonClan.Demons.FlameLurker;
+import DemonClan.Players.Healers.Healer;
+import DemonClan.Helpers.AttackMethods;
+import DemonClan.Helpers.Potions;
+import DemonClan.Helpers.Spells;
+import DemonClan.Players.Healers.Cleric;
 import org.junit.Before;
 import org.junit.Test;
 

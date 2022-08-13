@@ -1,10 +1,10 @@
-import Quests.Players.Fighters.Dwarf;
-import Quests.Players.Fighters.Barbarian;
-import Quests.Demons.Phalanx;
-import Quests.Players.Fighters.Fighter;
-import Quests.Helpers.AttackMethods;
-import Quests.Helpers.Weapons;
-import Quests.Players.Fighters.Knight;
+import DemonClan.Players.Fighters.Dwarf;
+import DemonClan.Players.Fighters.Barbarian;
+import DemonClan.Demons.Phalanx;
+import DemonClan.Players.Fighters.Fighter;
+import DemonClan.Helpers.AttackMethods;
+import DemonClan.Helpers.Weapons;
+import DemonClan.Players.Fighters.Knight;
 import org.junit.Before;
 import org.junit.Test;
 

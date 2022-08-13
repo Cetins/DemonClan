@@ -1,5 +1,5 @@
-import Quests.Demons.Phalanx;
-import Quests.Helpers.AttackMethods;
+import DemonClan.Demons.Phalanx;
+import DemonClan.Helpers.AttackMethods;
 import org.junit.Before;
 import org.junit.Test;
 

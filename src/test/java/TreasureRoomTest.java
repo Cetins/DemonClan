@@ -1,7 +1,7 @@
-import Quests.Demons.Phalanx;
-import Quests.Helpers.*;
-import Quests.Players.Fighters.Knight;
-import Quests.Rooms.TreasureRoom;
+import DemonClan.Demons.Phalanx;
+import DemonClan.Helpers.*;
+import DemonClan.Players.Fighters.Knight;
+import DemonClan.Rooms.TreasureRoom;
 import org.junit.Before;
 import org.junit.Test;
 

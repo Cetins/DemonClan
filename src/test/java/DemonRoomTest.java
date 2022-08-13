@@ -1,8 +1,8 @@
-import Quests.Demons.Demon;
-import Quests.Demons.Phalanx;
-import Quests.Helpers.*;
-import Quests.Players.Fighters.Knight;
-import Quests.Rooms.DemonRoom;
+import DemonClan.Demons.Demon;
+import DemonClan.Demons.Phalanx;
+import DemonClan.Helpers.*;
+import DemonClan.Players.Fighters.Knight;
+import DemonClan.Rooms.DemonRoom;
 import org.junit.Before;
 import org.junit.Test;
 

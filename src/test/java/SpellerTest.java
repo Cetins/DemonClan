@@ -1,8 +1,8 @@
-import Quests.Demons.FlameLurker;
-import Quests.Helpers.AttackMethods;
-import Quests.Helpers.Spells;
-import Quests.Players.Spellers.Warlock;
-import Quests.Players.Spellers.Wizard;
+import DemonClan.Demons.FlameLurker;
+import DemonClan.Helpers.AttackMethods;
+import DemonClan.Helpers.Spells;
+import DemonClan.Players.Spellers.Warlock;
+import DemonClan.Players.Spellers.Wizard;
 import org.junit.Before;
 import org.junit.Test;
 
