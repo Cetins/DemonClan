@@ -1,6 +1,6 @@
 # DemonClan
 
-## OOP with JAVA practise project
+## OOP with JAVA - practise project
 
 This is an educational project and not promising anything, so you can't actually fight with demons here :)
 
